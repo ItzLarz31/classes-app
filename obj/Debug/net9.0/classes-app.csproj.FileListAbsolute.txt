@@ -12,3 +12,4 @@ C:\Users\Shawn\documents\projects\classes-app\obj\Debug\net9.0\refint\classes-ap
 C:\Users\Shawn\documents\projects\classes-app\obj\Debug\net9.0\classes-app.pdb
 C:\Users\Shawn\documents\projects\classes-app\obj\Debug\net9.0\classes-app.genruntimeconfig.cache
 C:\Users\Shawn\documents\projects\classes-app\obj\Debug\net9.0\ref\classes-app.dll
+C:\Users\Shawn\documents\projects\classes-app\obj\Debug\net9.0\classes-app.sourcelink.json

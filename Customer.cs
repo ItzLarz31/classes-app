@@ -57,7 +57,7 @@ class Customer
         }
     }
 
-    public void SpendMoney(int amount)
+    public bool SpendMoney(int amount)
     {
 
         try
@@ -75,12 +75,13 @@ class Customer
             _money -= amount;
             Console.WriteLine($"Transaction of {amount} successful.\n");
             Console.WriteLine($"Remaining balance: ${_money}\n");
+            return true;
 
         }
         catch (ArgumentException ex)
         {
             Console.WriteLine(ex.Message);
-            return;
+            return false;
         }
 
 

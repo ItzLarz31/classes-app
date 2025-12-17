@@ -1,6 +1,6 @@
 ﻿Console.WriteLine("Welcome to the Pawn Shop!\n\n");
 Console.Write("What is your name: ");
-string name = Console.ReadLine();
+string? name = Console.ReadLine();
 bool browsing = false;
 bool shopping = true;
 
@@ -27,7 +27,7 @@ Console.WriteLine($"Initial Balance: {customer.GetMoney()}\n");
 while (shopping)
 {
     Console.WriteLine("Would you like to (1) Browse items, (2) Selling or (3) Exit?");
-    string choice = Console.ReadLine();
+    string? choice = Console.ReadLine();
 
     if (string.IsNullOrWhiteSpace(choice))
     {
@@ -48,7 +48,7 @@ while (shopping)
             }
 
             Console.Write("\nEnter the name of the item you wish to purchase (or type 'exit' to stop browsing): ");
-            string selectedItem = Console.ReadLine();
+            string? selectedItem = Console.ReadLine();
 
             if (string.IsNullOrWhiteSpace(selectedItem))
             {
@@ -65,10 +65,17 @@ while (shopping)
             if (itemsForSale.ContainsKey(selectedItem))
             {
                 int itemPrice = itemsForSale[selectedItem];
-                customer.SpendMoney(itemPrice);
-                customer.BuyItem(selectedItem, itemPrice);
-                Console.WriteLine($"You purchased {selectedItem} for ${itemPrice}.\n");
-                itemsForSale.Remove(selectedItem);
+                if (customer.GetMoney() >= itemPrice)
+                {
+                    customer.SpendMoney(itemPrice);
+                    customer.BuyItem(selectedItem, itemPrice);
+                    Console.WriteLine($"You purchased {selectedItem} for ${itemPrice}.\n");
+                    itemsForSale.Remove(selectedItem);
+                }
+                else
+                {
+                    Console.WriteLine($"Insufficient funds. You need ${itemPrice} but only have ${customer.GetMoney()}.\n");
+                }
             }
             else
             {
@@ -84,7 +91,7 @@ while (shopping)
         }
 
         Console.Write("Enter the name of the item you wish to sell or type in exit: ");
-        string itemToSell = Console.ReadLine();
+        string? itemToSell = Console.ReadLine();
 
 
 
