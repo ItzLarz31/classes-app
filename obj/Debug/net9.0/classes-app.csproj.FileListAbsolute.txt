@@ -1,0 +1,14 @@
+C:\Users\Shawn\documents\projects\classes-app\bin\Debug\net9.0\classes-app.exe
+C:\Users\Shawn\documents\projects\classes-app\bin\Debug\net9.0\classes-app.deps.json
+C:\Users\Shawn\documents\projects\classes-app\bin\Debug\net9.0\classes-app.runtimeconfig.json
+C:\Users\Shawn\documents\projects\classes-app\bin\Debug\net9.0\classes-app.dll
+C:\Users\Shawn\documents\projects\classes-app\bin\Debug\net9.0\classes-app.pdb
+C:\Users\Shawn\documents\projects\classes-app\obj\Debug\net9.0\classes-app.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shawn\documents\projects\classes-app\obj\Debug\net9.0\classes-app.AssemblyInfoInputs.cache
+C:\Users\Shawn\documents\projects\classes-app\obj\Debug\net9.0\classes-app.AssemblyInfo.cs
+C:\Users\Shawn\documents\projects\classes-app\obj\Debug\net9.0\classes-app.csproj.CoreCompileInputs.cache
+C:\Users\Shawn\documents\projects\classes-app\obj\Debug\net9.0\classes-app.dll
+C:\Users\Shawn\documents\projects\classes-app\obj\Debug\net9.0\refint\classes-app.dll
+C:\Users\Shawn\documents\projects\classes-app\obj\Debug\net9.0\classes-app.pdb
+C:\Users\Shawn\documents\projects\classes-app\obj\Debug\net9.0\classes-app.genruntimeconfig.cache
+C:\Users\Shawn\documents\projects\classes-app\obj\Debug\net9.0\ref\classes-app.dll
